@@ -7,13 +7,51 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .content {
+            flex: 1;
         }
         h1, h2 {
             color: #333;
@@ -21,42 +59,47 @@
         p {
             text-align: justify;
         }
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <img src="images/img-002.jpeg" alt="Profile Picture">
+        <a href="#about">About Me</a>
+        <a href="#magazine">Thangam Magazine</a>
+        <a href="#awards">Awards</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact & Meet Me</a>
+        <a href="#cv">Download CV</a>
+    </div>
     <div class="container">
         <img src="images/img-001.jpeg" alt="Shaik Mydeen Thanga Mohideen Pitchai" class="profile-img">
-        <h1>Shaik Mydeen Thanga Mohideen Pitchai</h1>
-        <p><strong>Born:</strong> 21 October 1977</p>
-        <p><strong>Birthplace:</strong> Tirunelveli, Tamil Nadu, India</p>
-        <p><strong>Occupation:</strong> Businessman, Journalist</p>
-        <p><strong>Founder & Managing Director:</strong> Thangam Group</p>
-        
-        <h2>Business Ventures</h2>
-        <ul>
-            <li>Thangam Network Private Limited</li>
-            <li>Thangam Trading Private Limited</li>
-            <li>Thangam Tamil Monthly Magazine</li>
-            <li>Thangam TV (Cable TV Station)</li>
-            <li>Thangam Masala (International Food Products)</li>
-            <li>Signature Salon (Multiple Studios in Tamil Nadu)</li>
-        </ul>
-        
-        <h2>Personal Life</h2>
-        <p>Shaik Mydeen is married to his uncle’s daughter, Banu. They have two children: a daughter, Meher Nisha Begum, and a son, Abdur Rahman Thangam.</p>
-        
-        <h2>Family Background</h2>
-        <p>Shaik Mydeen is the eldest son of Thanga Mohideen Pitchai, the founder of Valar Ads. He has one brother, Abdul Salam.</p>
-        
-        <h2>Education</h2>
-        <p>He studied at Muslim Higher Secondary School and Gill Adarsh Higher Secondary School in Chennai. He initially pursued a bachelor's degree in commerce at The New College, Chennai but discontinued. Later, he earned a bachelor's degree in political science from Annamalai University, graduating in 2018.</p>
+        <div class="content">
+            <h1>Shaik Mydeen Thanga Mohideen Pitchai</h1>
+            <p><strong>Born:</strong> 21 October 1977</p>
+            <p><strong>Birthplace:</strong> Tirunelveli, Tamil Nadu, India</p>
+            <p><strong>Occupation:</strong> Businessman, Journalist</p>
+            <p><strong>Founder & Managing Director:</strong> Thangam Group</p>
+            
+            <h2>Business Ventures</h2>
+            <ul>
+                <li>Thangam Network Private Limited</li>
+                <li>Thangam Trading Private Limited</li>
+                <li>Thangam Tamil Monthly Magazine</li>
+                <li>Thangam TV (Cable TV Station)</li>
+                <li>Thangam Masala (International Food Products)</li>
+                <li>Signature Salon (Multiple Studios in Tamil Nadu)</li>
+            </ul>
+            
+            <h2>Personal Life</h2>
+            <p>Shaik Mydeen is married to his uncle’s daughter, Banu. They have two children: a daughter, Meher Nisha Begum, and a son, Abdur Rahman Thangam.</p>
+            
+            <h2>Family Background</h2>
+            <p>Shaik Mydeen is the eldest son of Thanga Mohideen Pitchai, the founder of Valar Ads. He has one brother, Abdul Salam.</p>
+            
+            <h2>Education</h2>
+            <p>He studied at Muslim Higher Secondary School and Gill Adarsh Higher Secondary School in Chennai. He initially pursued a bachelor's degree in commerce at The New College, Chennai but discontinued. Later, he earned a bachelor's degree in political science from Annamalai University, graduating in 2018.</p>
+        </div>
     </div>
 </body>
 </html>
