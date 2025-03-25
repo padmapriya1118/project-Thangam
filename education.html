@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Mydeen Thanga Mohideen Pitchai - Education & Career</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            justify-content: space-between;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #333;
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+            text-align: center;
+        }
+        .menu a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .content {
+            flex: 1;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/img-002.jpeg" alt="Profile Picture" width="40" height="40" style="border-radius: 50%;">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu" id="menu">
+            <a href="index.html">Biography</a>
+            <a href="#education">Education</a>
+            <a href="#career">Career</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>Education</h1>
+            <ul>
+                <li>Bachelor of Political Science, Annamalai University, Chidambaram, Tamil Nadu, India.</li>
+                <li>Bachelor of Commerce, The New College, Chennai, Tamil Nadu, India.</li>
+                <li>Higher Diploma in Software Engineering (HDSE), Aptech Institute, Chennai, Tamil Nadu, India.</li>
+                <li>Higher Secondary, Gill Adarsh Matriculation Higher Secondary School, Royapettah, Chennai, Tamil Nadu, India.</li>
+                <li>SSLC, Muslim Higher Secondary School, Triplicane, Chennai, Tamil Nadu, India.</li>
+            </ul>
+            
+            <h2>Career</h2>
+            <p>He joined Valar Ads Company (Advertisement Agency) in 1999. In 1993, Thanga Mohideen Pitchai started Valar Ads. In September 2007, Shaik Mydeen Thangam and his brother Abdul Salam Thangam started Thangam Monthly Magazine. Shaik Mydeen is the publisher and editor of Thangam Magazine. The Thangam Brothers started Thangam Group, where Shaik Mydeen is the Founder Chairman and Managing Director.</p>
+            
+            <h2>Professional Roles</h2>
+            <ul>
+                <li>Managing Director, Thangam Trading Pvt. Ltd., Tamil Nadu, India.</li>
+                <li>Managing Director, Thangam Network Pvt. Ltd., Tamil Nadu, India.</li>
+                <li>Founder Chairman, Thangam Group, Tamil Nadu, India.</li>
+                <li>Editor, Thangam Tamil Monthly Magazine, Tamil Nadu, India.</li>
+                <li>Publisher, Thangam Tamil Monthly Magazine, Tamil Nadu, India.</li>
+                <li>Owner, Thangam Tamil Monthly Magazine, Tamil Nadu, India.</li>
+                <li>India Correspondent, Malaysia Nanban Tamil Newspaper, Malaysia.</li>
+                <li>Proprietor, Valar Ads (Advertisement Agency), Tamil Nadu, India.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>
